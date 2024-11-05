@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Inicio</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/popup.css"> <!-- Nueva hoja de estilo -->
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/Logo-Netflix.png" alt="Netflix Logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="Musica.html">Musica</a></li>
+                <li><a href="peliculas.html">Películas</a></li>
+                <li><a href="Comics.html">Comics</a></li>
+                <li><a href="#">Mi lista</a></li>
+            </ul>
+        </div>
+        <div class="user-menu">
+            <img src="img/images.png" alt="Usuario" class="user-icon">
+            <div class="dropdown">
+                <span>⚙️</span>
+                <div class="dropdown-content">
+                    <a href="#" id="cerrarSesion">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de contenido -->
+    <section class="content">
+        <!-- Recomendaciones principales -->
+        <div class="row">
+            <h2>Top Picks for You</h2>
+            <div class="row-posters">
+                <img src="img/the_silence-652215640-large.jpg" alt="The Silence" 
+                     data-synopsis="Cuando las criaturas que cazan a sus presas humanas por el sonido invaden la Tierra, una adolescente y su familia buscan seguridad en un refugio remoto fuera de la ciudad." 
+                     data-trailer="https://www.youtube.com/embed/48cqUgtF-Ys">
+                <img src="img/black_summer-920592550-large.jpg" alt="Black Summer" 
+                     data-synopsis=" En los primeros y confusos días de un apocalipsis zombi, completos desconocidos deben aliarse para hacerse fuertes y regresar con sus seres queridos. Precuela de la serie Z Nation producida por The Asylum para el canal Syfy." 
+                     data-trailer="https://www.youtube.com/embed/tQA1omPJN24">
+                <img src="img/ourplamet.jpg" alt="Our Planet" 
+                     data-synopsis="La épica batalla de la vida para conquistar y sobrevivir en el planeta Tierra. Hoy existen 20 millones de especies en nuestro planeta, pero lo que vemos es sólo una instantánea en el tiempo. El 99 % de los habitantes de la Tierra están perdidos en nuestro pasado más remoto. La historia de lo que sucedió a estas dinastías, su ascenso y su caída." 
+                     data-trailer="https://www.youtube.com/embed/aETNYyrqNYE">
+                <img src="img/sabrina.jpg" alt="Sabrina" 
+                     data-synopsis="La magia y las travesuras marcan el rumbo de Sabrina, una adolescente de doble naturaleza que se debate entre el mundo de los mortales y el que se oculta debajo." 
+                     data-trailer="https://www.youtube.com/embed/51fOujPcgIE">
+                <img src="img/friends.jpg" alt="Friends" 
+                     data-synopsis="Friends narra las aventuras y desventuras de seis jóvenes de Nueva York. Rachel (Jennifer Aniston), Monica (Courteney Cox), Phoebe (Lisa Kudrow), Ross (David Schwimmer), Chandler (Matthew Perry) y Joey (Matt LeBlanc) forman una unida pandilla de amigos que viven en Manhattan y que suelen reunirse en sus apartamentos o en su bar habitual, el Central Perk. A pesar de los numerosos cambios que se producen en sus vidas, su amistad es inquebrantable en la dura batalla por salir adelante en sus periplos profesionales y personales." 
+                     data-trailer="https://www.youtube.com/embed/ki6Mbtnl_9I">
+                <img src="img/Nadie_nos_va_a_extraanar_Serie_de_TV-865084296-large.jpg" alt="Nadie nos va a extrañar" 
+                     data-synopsis="Son los años 90 y cinco pringados dirigen un negocio ilegal en su instituto: venden trabajos y deberes a sus compañeros. La ventaja es que nadie sospecha nunca de los empollones. El negocio les reporta dinero y popularidad, pero las hormonas y una muerte inesperada amenazan con estropearlo todo. Si el negocio se acaba, su futuro y su amistad corren peligro." 
+                     data-trailer="https://www.youtube.com/embed/PUqZcKXFARk">
+                <img src="img/la casa de papel.jpg" alt="La casa de papel" 
+                     data-synopsis="Un misterioso personaje, que se hace llamar El Profesor, planea el mayor de los atracos jamás ideado. Para llevar a cabo el ambicioso plan, recluta a una banda formada por personas con ciertas cualidades y algo en común: no tienen nada que perder. El objetivo es atracar la Fábrica Nacional de Moneda y Timbre, con la intención de quedarse encerrados dentro con una misión muy concreta: no robar dinero, sino crearlo. Tras cinco meses de reclusión, memorizando cada paso, cada detalle, cada probabilidad..., por fin llega el día. Les esperan once días de encierro en la Fábrica de Moneda, rodeados de los cuerpos de élite de la policía y con 67 rehenes en su poder." 
+                     data-trailer="https://www.youtube.com/embed/3y-6iaveY6c">
+                <img src="img/primal.jpg" alt="Primal" 
+                     data-synopsis="Un cavernícola y un dinosaurio, ambos al borde de la extinción por diversos motivos, unen sus fuerzas en una peculiar alianza con el único propósito de sobrevivir en un mundo violento y hostil. Además de la serie, existe un largometraje de 80 minutos titulado Primal: Tales of Savagery." 
+                     data-trailer="https://www.youtube.com/embed/co28PDKv2VY">
+                <img src="img/the midnight gospel.jpg" alt="The Midnight Gospel" 
+                     data-synopsis="Clancy, un transmisor espacial con un fallo en su simulador de multiversos, deja el confort de su hogar para entrevistar a seres que viven en mundos agonizantes." 
+                     data-trailer="https://www.youtube.com/embed/oOhb4TWNKEY">
+            </div>
+        </div>
+
+        <!-- Añadidos recientemente -->
+        <div class="row">
+            <h2>Recently Added</h2>
+            <div class="row-posters">
+                <img src="img/baywatch.jpg" alt="Baywatch" 
+                     data-synopsis="Adaptación al cine de la serie Los vigilantes de la playa. Narra la historia del esforzado socorrista Mitch Buchannon (Johnson) y su choque de carácter con un bravucón socorrista novato (Efron). Juntos, descubren una trama delictiva local que amenaza el futuro de la Bahía. (FILMAFFINITY)" 
+                     data-trailer="https://www.youtube.com/embed/eyKOgnaf0BU">
+                <img src="img/your vs wild.jpg" alt="You vs Wild" 
+                     data-synopsis="En esta serie interactiva, tomarás decisiones cruciales para que Bear Grylls sobreviva y cumpla sus misiones en los entornos más hostiles del planeta." 
+                     data-trailer="https://www.youtube.com/embed/Kcp0HIvCRTs">
+                <img src="img/The Perfect Date.jpg" alt="The Perfect Date" 
+                     data-synopsis="Brooks crea una aplicación de citas para conseguir dinero para la universidad en la que él es siempre el pretendiente. En cada cita actúa de manera diferente, dependiendo de las demandas de las interesadas. Sin embargo, siendo una persona distinta cada noche, descubre que el verdadero Brooks Rattigan no es quien creía que era, y sorprendentemente, encuentra a la chica de sus sueños." 
+                     data-trailer="https://www.youtube.com/embed/Hld-7oBn3Rk">
+                <img src="img/Huge in France.jpg" alt="Huge in France" 
+                     data-synopsis="El cómico Gad Elmaleh se muda a Los Ángeles para retomar la relación con su hijo y deberá aprender a vivir sin las ventajas a las que estaba acostumbrado por ser famoso." 
+                     data-trailer="https://www.youtube.com/embed/0AG7tsCshXI">
+                <img src="img/strappare_lungo_i_bordi-889125001-mmed.jpg" alt="Cortar por la línea de puntos" 
+                     data-synopsis="Miniserie de TV (2021). 6 episodios. Zero, un escritor y artista de cómics que se imagina a su subconsciente como un armadillo, recuerda cómo conoció a su amiga Alice cuando tenían 17 años. En 2023 se estrenó una continuación para Netflix en junio de 2023, titulada Este mundo no me hará mala persona" 
+                     data-trailer="https://www.youtube.com/embed/aT7XzkO_CmM">
+                <img src="img/bojack_horseman-687229611-large.jpg" alt="BoJack Horseman" 
+                     data-synopsis="Serie de TV (2014-2020). 6 temporadas. 77 episodios. En un mundo donde humanos y animales antropomórficos conviven, el protagonista de la serie es el caballo BoJack Horseman (Will Arnett), protagonista de la telecomedia Horsin Around en la década de los 90. Después de años de decadencia y una tormentosa vida personal, BoJack se propone volver al candelero a través de una autobiografía para la que contará con ayuda de una escritora fantasma, Diane Nguyen (Alison Brie). Pero BoJack también tendrá que lidiar con las exigencias de su exnovia y agente, la gata Princess Carolyn, su compañero de piso, Todd Chávez, y su amienemigo Mr. Peanutbutter, un perro labrador que es novio de Diane y triunfó con una sitcom muy similar a Horsin Around" 
+                     data-trailer="https://www.youtube.com/embed/i1eJMig5Ik4">
+                <img src="img/love_death_robots_vol_2-741850324-large.jpg" alt="Love, Death & Robots" 
+                     data-synopsis="Serie de TV (2021). 8 episodios. Gigantes desnudos, demonios navideños y robots enloquecidos... Temporada 2 de la serie antológica de cortos con historias independientes, presentada por Tim Miller, David Fincher y Jennifer Yuh Nelson." 
+                     data-trailer="https://www.youtube.com/embed/AUaXtfAFva8">
+                <img src="img/questo_mondo_non_mi_rendera_cattivo-501523977-large.jpg" alt="Este mundo no me hará mala persona" 
+                     data-synopsis="6 episodios. Un viejo amigo regresa tras años de ausencia y no reconoce el barrio donde creció. Zerocalcare quiere echarle una mano, pero ¿Qué elección es la correcta? Continuación de la aclamada Cortar por la línea de puntos." 
+                     data-trailer="https://www.youtube.com/embed/lW5-RO5IOO0">
+                <img src="img/twilight_of_the_gods-205421042-large.jpg" alt="El ocaso de los dioses" 
+                     data-synopsis="1 temporada, 8 episodios. Hay un rey y su reina en un pequeño pueblo vikingo, y quieren casarse. En su boda les ocurre algo que hace que Sigrid, la futura novia, que es hija de gigantes, emprenda una loca misión de venganza. Reúne a un grupo de personajes (un vidente, un enano) para formar una banda que tiene la misión de encontrar a un dios y luchar contra él. Es una misión, es una historia de venganza." 
+                     data-trailer="https://www.youtube.com/embed/xyFKgPpdYdc">            
+            </div>
+        </div>
+    </section>
+
+    <!-- Pestaña emergente -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-synopsis"></p>
+            <iframe id="popup-trailer" width="400" height="300" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script> <!-- Nuevo archivo JavaScript -->
+</body>
+</html>

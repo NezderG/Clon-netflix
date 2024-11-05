@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Películas</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pelicula.css">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/Logo-Netflix.png" alt="Netflix Logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="menu.html">Inicio</a></li>
+                <li><a href="Musica.html">Música</a></li>
+                <li><a href="peliculas.html">Películas</a></li>
+                <li><a href="Comics.html">Comics</a></li>
+                <li><a href="#">Mi lista</a></li>
+            </ul>
+        </div>
+        <div class="user-menu">
+            <img src="img/images.png" alt="Usuario" class="user-icon">
+            <div class="dropdown">
+                <span>⚙️</span>
+                <div class="dropdown-content">
+                    <a href="#" id="cerrarSesion">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de canciones/videos -->
+    <section class="content">
+        <div class="row">
+            <h2>MOVIES</h2>
+            <div class="row-posters">
+                <img src="img/the-batman-2022-i122127.jpg" alt="The Batman" 
+                     data-synopsis="Cuando un asesino se dirige a la élite de Gotham con una serie de maquinaciones sádicas, un rastro de pistas crípticas envía Batman a una investigación en los bajos fondos. A medida que las pruebas comienzan a acercarse a su casa y se hace evidente la magnitud de los planes del autor, Batman debe forjar nuevas relaciones, desenmascarar al culpable y hacer justicia al abuso de poder y la corrupción que durante mucho tiempo han asolado Gotham City." 
+                     data-video="video/TheBatman.mp4"> <!-- Archivo de video local -->
+                <img src="img/8 mile.jpg" alt="8 Mile: Calle de ilusiones" 
+                     data-synopsis="La gente de Detroit conoce al limite de la Ciudad como 8 Mile. Pero este límite no solamente es físico sino que es una barrera psicologica que separa a Jimmy Smith de lo que el quiere llegar a ser. 8 Mile Calle de las Ilusiones es una provocativa refleión de lo que implica una semana para la vida de Jimmy. Esta película es estelarizada por el multi-premiado artista EMINEM en su primer papel protagónico jacompañado por Kim Basinger como su madre." 
+                     data-video="video/8 mile.mp4"> <!-- Archivo de video local -->
+                <img src="img/LA VIDA EN UN AÑO.jpg" alt="Una vida en un año" 
+                     data-synopsis="Un joven de 17 años descubre que su novia se está muriendo, por lo que se propone darle una vida entera, en el último año que se fue." 
+                     data-video="video/la vida en un año.mp4"> <!-- Archivo de video local -->
+                <!-- Añade más videos aquí -->
+                <img src="img/GUASON-DESTACADA-661x621.png" alt="Joker 2" 
+                data-synopsis="El fracasado comediante Arthur Fleck conoce al amor de su vida, Harley Quinn, mientras está encarcelado en el Hospital Estatal de Arkham. Tras su liberación, los dos se embarcan en una desventura romántica condenada al fracaso." 
+                data-video="video/JOKER 2.mp4"> <!-- Archivo de video local -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pestaña emergente -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-synopsis"></p>
+            <video id="popup-video" controls>
+                <source id="popup-video-source" src="" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+    </div>
+
+    <script src="js/popup.js"></script>
+</body>
+</html>

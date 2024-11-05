@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Comics</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/Logo-Netflix.png" alt="Netflix Logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="menu.html">Inicio</a></li>
+                <li><a href="Musica.html">Música</a></li>
+                <li><a href="peliculas.html">Películas</a></li>
+                <li><a href="Comics.html">Comics</a></li>
+                <li><a href="#">Mi lista</a></li>
+            </ul>
+        </div>
+        <div class="user-menu">
+            <img src="img/images.png" alt="Usuario" class="user-icon">
+            <div class="dropdown">
+                <span>⚙️</span>
+                <div class="dropdown-content">
+                    <a href="#" id="cerrarSesion">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de comics -->
+    <section class="content">
+        <div class="row">
+            <h2>Comics Populares</h2>
+            <div class="row-posters">
+                <img src="img/Batgirls-1-2021.jpg" alt="Batgirls" 
+                     data-synopsis="las Batgirls Cassandra Cain y Stephanie Brown, que solo pueden navegar por la ciudad oscura, arenosa y, a menudo, aterradora de Gotham apoyándose en la luz brillante que es su mejor amistad. Con las mentoras de Oracle, las Batgirls se mudan al otro lado de la ciudad donde Barbara Gordon puede vigilarlas mejor mientras el hacker Vidente todavía está invadiendo sus vidas. Steph puede ser demasiado imprudente a veces, y Cass no habla mucho, pero lo que les falta en similitudes lo compensan con su respeto mutuo y amor mutuo... ¡y lo que las hace más fuertes juntas como Batgirls! Y pueden ser buenos pateando traseros pero solo están haciendo todo lo posible para ser adolescentes normales, que tomarán prestadas las llaves de un auto deportivo que perteneció a un tipo malo y tal vez lo den un paseo por la ciudad sin una licencia de conducir, luego corran para volver a casa a Oracle por toque de queda…! Salpicando las páginas con colores brillantes contra un fondo oscuro de Gotham, Batgirls es la fiesta de pijamas de pizza del año que no querrás perderte." 
+                     data-pdf="pdf/Batgirls.pdf">
+                <img src="img/robinbatman.jpg" alt="Batman And Robin" 
+                     data-synopsis=" Padre e hijo. Bruce y Damián. Batman y Robin. Desde Batman vs. Robin hasta Knight Terrors, le han pasado muchas cosas al Dúo Dinámico, pero ahora están juntos de nuevo y listos para luchar contra el crimen en Gotham, justo a tiempo para que los pícaros más monstruosos de Batman se unan para convertir la ciudad en una ciudad urbana. ¡selva! ¡Un nuevo villano observa desde las sombras, con la intención de vengarse, con un complot para poner uno de los mayores activos de Batman en su contra! ¿Podrá Damian ayudar a su padre a resolver el caso antes de que sea demasiado tarde? ¡Comienza una nueva, divertida y emocionante aventura entre padre e hijo, de la mano del arquitecto de DC Comics Joshua Williamson y la artista superestrella Simone Di Meo!" 
+                     data-pdf="pdf/BatmanAndRobin.pdf">
+                <img src="img/ghotam.jpg" alt=" Batman/Catwoman Gotham War" 
+                     data-synopsis="El crimen ha disminuido en Ciudad Gótica... ¿Podría ser algo malo? Un esfuerzo coordinado en Ciudad Gótica ha llevado a una reducción en el crimen violento, pero ¿a qué costo? Los villanos se dispersan mientras sus vidas comienzan a desmoronarse bajo un nuevo régimen. Y mientras Batman se recupera de su batalla épica a través del Multiverso y los horrores de Knight Terrors, un nombre pasa por su mente. Un nombre en el corazón de esta nueva y más segura Ciudad Gótica... Catwoman. ¡Un conflicto que se ha estado gestando durante más de un año finalmente llega a las calles y fracturará a la Bat-Familia cuando estalla la guerra! De los escritores superventas Chip Zdarsky y Tini Howard y los artistas Mike Hawthorne y Adriano Di Benedetto llega la toma inicial de la Guerra de Ciudad Gótica." 
+                     data-pdf="pdf/Ghotam War.pdf">
+                <img src="img/spiderman.jpg" alt="Ultimate Spider-Man Volumen 3" 
+                     data-synopsis="El escritor revolucionario Jonathan Hickman y el aclamado artista Marco Checchetto (DAREDEVIL) te traen una nueva y audaz versión de Spider-Man, con el título debut de la nueva línea de Ultimate Comics. Después de los eventos de ULTIMATE INVASION, el mundo necesita un héroe... ¿quién se levantará para asumir esa responsabilidad? ¡Prepárate para enredarte en una red de misterio y emoción mientras el nuevo cómic ULTIMATE SPIDER-MAN redefine al trepamuros para el siglo XXI!" 
+                     data-pdf="pdf/Spidermanm.pdf">
+                <!-- Añade más cómics aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pestaña emergente -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-synopsis"></p>
+            <iframe id="popup-pdf" src="" type="application/pdf" width="100%" height="600px"></iframe>
+        </div>
+    </div>
+
+    <script src="js/popup.js"></script> <!-- Reutilizamos el mismo script del popup -->
+</body>
+</html>
