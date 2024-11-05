@@ -1,0 +1,60 @@
+/* popup.css */
+.popup {
+    display: none; /* Ocultamos por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    animation: fadeIn 0.3s; /* Animación de aparición */
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centrar */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho de la pestaña */
+    max-width: 800px; /* Ancho máximo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para el título y sinopsis */
+#popup-title {
+    color: black; /* Color negro para el título */
+    margin: 10px 0;
+}
+
+#popup-synopsis {
+    color: black; /* Color negro para la sinopsis */
+    margin: 10px 0;
+}
+
+/* Tamaño del iframe */
+#popup-trailer {
+    width: 100%; /* Ancho completo */
+    height: 400px; /* Altura personalizada */
+    margin-top: 10px; /* Margen superior */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,53 @@
+/* popup.css */
+.popup {
+    display: none; /* Ocultamos por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    animation: fadeIn 0.3s; /* Animación de aparición */
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#popup-title {
+    color: black;
+    margin: 10px 0;
+}
+
+#popup-synopsis {
+    color: black;
+    margin: 10px 0;
+}
+
+#popup-video {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
